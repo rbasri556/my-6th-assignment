@@ -53,7 +53,7 @@ const selectItem = (event, img) => {
 }
 let timer
 const createSlider = () => {
-    //  check slider image length
+    //   check slider image length
     if (sliders.length < 2) {
          alert('Select at least 2 image.')
         return;
@@ -71,9 +71,9 @@ const createSlider = () => {
     document.querySelector('.main').style.display = 'block';
     // hide image aria
     imagesArea.style.display = 'none';
-    const duration = document.getElementById('duration').value || 1000;
-    if (duration < 1) {
-        alert("the number can't be negative")
+    const duration = document.getElementById('duration').value || 2000;
+    if (duration < 2) {
+        alert("the number can be positive")
         return;
 
     }
